@@ -28,8 +28,24 @@
                       android:paddingLeft="@dimen/album_title_padding"
                       android:paddingRight="@dimen/album_title_padding"
                       android:paddingTop="@dimen/album_title_padding"
-                      android:textColor="@color/colorAccent"
+                      android:textColor="@color/material_dynamic_secondary0"
+                      android:textSize="@dimen/album_title"
             />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/count"
+                      android:layout_below="@id/title"
+                      android:paddingBottom="@dimen/songs_count_padding_button"
+                      android:paddingLeft="@dimen/album_title_padding"
+                      android:paddingRight="@dimen/album_title_padding"
+                      android:textSize="@dimen/songs_count"
+
+
+            />
+
+
+
         </RelativeLayout>
 
 
