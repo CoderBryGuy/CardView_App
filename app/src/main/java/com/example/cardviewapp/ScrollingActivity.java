@@ -72,8 +72,36 @@ public class ScrollingActivity extends AppCompatActivity {
         //add the card data and display them
 
         int[] appscovers = new int[]{
-
+            R.drawable.icon1,
+            R.drawable.icon2,
+            R.drawable.icon3,
+            R.drawable.icon4,
+            R.drawable.icon5,
+            R.drawable.icon6,
+            R.drawable.icon7,
+            R.drawable.icon8
         };
+
+        AppsModel a = new AppsModel("Master Android App", 8000000, appscovers[0]);
+        mAppsList.add(a);
+
+       a = new AppsModel("Master Android pro", 800, appscovers[1]);
+        mAppsList.add(a);
+
+         a = new AppsModel("Master Kotlin App", 450, appscovers[2]);
+        mAppsList.add(a);
+
+         a = new AppsModel("Navigation App", 87100, appscovers[3]);
+        mAppsList.add(a);
+
+         a = new AppsModel("Subscribe App", 7500, appscovers[4]);
+        mAppsList.add(a);
+
+         a = new AppsModel("Like App", 2000, appscovers[5]);
+        mAppsList.add(a);
+
+        //notify data  change
+        mAppsAdapter.notifyDataSetChanged();
     }
 
     @Override
